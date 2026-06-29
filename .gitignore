@@ -1,0 +1,40 @@
+# Node.js
+
+node_modules/
+npm-debug.log*
+
+# Java
+
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Spring Boot
+
+*.log
+
+# Environment
+
+.env
+
+# IDE
+
+.idea/
+.vscode/
+
+# OS
+
+.DS_Store
+Thumbs.db
+
+# Build
+
+dist/
+build/
+
+# Temporary
+
+*.tmp
+*.swp
