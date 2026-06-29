@@ -1,89 +1,115 @@
-#  Banking System
+# Banking System
 
-A modern Full-Stack Banking Management System that enables users to securely manage bank accounts, perform financial transactions, and access banking services through an intuitive web interface.
-
----
-
-##  Project Overview
-
-The Banking System is a full-stack web application developed to simulate real-world banking operations. The application provides secure authentication, account management, fund transfers, transaction tracking, and an interactive dashboard.
-
-The system is designed with separate frontend and backend architectures to ensure scalability, maintainability, and secure communication using REST APIs.
+A full-stack Banking Management System developed using Spring Boot, React.js, and MySQL. The application provides secure authentication, account management, money transfers, transaction history, and a responsive banking dashboard.
 
 ---
 
-##  Features
+## Live Demo
 
-### User Authentication
+Application URL
+
+https://banking-system-web.vercel.app/login
+
+Repository
+
+https://github.com/ARAVIND23005370/BankingSystem-
+
+---
+
+# Table of Contents
+
+* Overview
+* Features
+* Technology Stack
+* System Architecture
+* Project Structure
+* Installation
+* API Modules
+* Future Enhancements
+* Contributing
+* Author
+* License
+
+---
+
+# Overview
+
+The Banking System is a full-stack web application that simulates real-world banking operations. It enables users to securely create and manage bank accounts, perform financial transactions, and monitor account activity through an intuitive web interface.
+
+The application follows a client-server architecture where the React frontend communicates with a Spring Boot REST API, while MySQL stores all application data securely.
+
+---
+
+# Features
+
+## Authentication
 
 * User Registration
 * Secure Login
 * JWT Authentication
 * Protected Routes
-* Logout Functionality
+* Logout
 
-### Account Management
+## Account Management
 
-* Create Bank Account
+* Create Account
 * View Account Details
-* Update User Profile
+* Update Profile
 * Check Account Balance
 
-### Banking Operations
+## Banking Operations
 
 * Deposit Money
 * Withdraw Money
 * Transfer Money
 * View Transaction History
 
-### Dashboard
+## Dashboard
 
-* Customer Dashboard
-* Banking Summary
+* Banking Dashboard
 * Recent Transactions
-* Account Information
+* Account Summary
+* User Information
 
-### Security
+## Security
 
 * Password Encryption
 * JWT Token Validation
-* Role Based Authorization
-* Secure API Communication
-
----
-
-#  Tech Stack
-
-## Frontend
-
-* React.js
-* JavaScript
-* HTML5
-* CSS3
-* Axios
-
-## Backend
-
-* Java
-* Spring Boot
 * Spring Security
-* REST API
-* Maven
-
-## Database
-
-* MySQL
-
-## Version Control
-
-* Git
-* GitHub
+* Secure REST APIs
 
 ---
 
-#  Project Structure
+# Technology Stack
 
+| Category        | Technologies                              |
+| --------------- | ----------------------------------------- |
+| Frontend        | React.js, JavaScript, HTML5, CSS3, Axios  |
+| Backend         | Java, Spring Boot, Spring Security, Maven |
+| Database        | MySQL                                     |
+| API             | REST API                                  |
+| Version Control | Git, GitHub                               |
+| Deployment      | Vercel                                    |
+
+---
+
+# System Architecture
+
+```text
+React Frontend
+        │
+        ▼
+Spring Boot REST API
+        │
+        ▼
+MySQL Database
 ```
+
+---
+
+# Project Structure
+
+```text
 BankingSystem
 │
 ├── Backend
@@ -92,17 +118,35 @@ BankingSystem
 │   └── application.properties
 │
 ├── Frontend
-│   ├── src
 │   ├── public
-│   └── package.json
+│   ├── src
+│   ├── package.json
+│   └── package-lock.json
 │
 ├── README.md
-└── .gitignore
+├── .gitignore
+├── LICENSE
+├── CONTRIBUTING.md
+├── SECURITY.md
+└── CHANGELOG.md
 ```
 
 ---
 
-#  Installation
+# Prerequisites
+
+Before running the project, ensure the following software is installed:
+
+* Java 17 or later
+* Maven
+* Node.js
+* npm
+* MySQL
+* Git
+
+---
+
+# Installation
 
 ## Clone Repository
 
@@ -110,9 +154,15 @@ BankingSystem
 git clone https://github.com/ARAVIND23005370/BankingSystem-.git
 ```
 
+Move into the project directory.
+
+```bash
+cd BankingSystem
+```
+
 ---
 
-## Backend
+## Backend Setup
 
 ```bash
 cd Backend
@@ -122,7 +172,7 @@ mvn spring-boot:run
 
 ---
 
-## Frontend
+## Frontend Setup
 
 ```bash
 cd Frontend
@@ -130,79 +180,89 @@ npm install
 npm start
 ```
 
----
-
-#  API Overview
-
-| Method | Endpoint       | Description         |
-| ------ | -------------- | ------------------- |
-| POST   | /auth/register | Register User       |
-| POST   | /auth/login    | User Login          |
-| GET    | /account       | Fetch Account       |
-| POST   | /deposit       | Deposit Money       |
-| POST   | /withdraw      | Withdraw Money      |
-| POST   | /transfer      | Money Transfer      |
-| GET    | /transactions  | Transaction History |
-
----
-
-#  Screenshots
-
-Add screenshots here after running the application.
-
-Example:
+The frontend will typically run on:
 
 ```
+http://localhost:3000
+```
+
+---
+
+# API Modules
+
+The backend provides REST APIs for:
+
+* User Registration
+* User Authentication
+* Account Management
+* Balance Inquiry
+* Deposit
+* Withdrawal
+* Money Transfer
+* Transaction History
+
+---
+
+# Screenshots
+
+Screenshots can be added in the following structure.
+
+```text
 screenshots/
 
 login.png
 
 dashboard.png
 
-transaction.png
+transactions.png
+
+transfer.png
 ```
 
 ---
 
-#  Future Enhancements
+# Future Enhancements
 
 * Email Notifications
 * OTP Verification
-* Admin Dashboard
 * Loan Management
-* UPI Payments
-* Mobile Responsive UI
-* Profile Picture Upload
-* Account Statement PDF
+* Admin Dashboard
+* UPI Integration
+* PDF Bank Statements
+* Mobile Responsive Improvements
 * Analytics Dashboard
+* Multi-language Support
 
 ---
 
-#  Contributing
+# Contributing
 
 Contributions are welcome.
 
-1. Fork the repository
-
-2. Create a new branch
-
-3. Commit your changes
-
-4. Push to GitHub
-
-5. Create a Pull Request
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push the branch.
+5. Open a Pull Request.
 
 ---
 
-#  Author
+# Author
 
-**Aravind R**
+Aravind R
 
-GitHub:
+GitHub
+
 https://github.com/ARAVIND23005370
 
 ---
 
-#  Support
+# License
 
-If you found this project useful, consider giving it a  on GitHub.
+This project is licensed under the MIT License.
+
+---
+
+# Acknowledgements
+
+This project was developed for learning full-stack web application development using Spring Boot, React.js, and MySQL.
