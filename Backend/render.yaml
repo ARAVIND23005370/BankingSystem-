@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: banking-system-backend
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    region: oregon
+    plan: free
+    envVars:
+      - key: SPRING_DATA_MONGODB_URI
+        sync: false
+        # Set this in Render dashboard → Environment → paste your MongoDB Atlas URI
